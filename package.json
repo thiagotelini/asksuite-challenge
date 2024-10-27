@@ -7,7 +7,8 @@
     "start": "ts-node -r tsconfig-paths/register src/server.ts",
     "dev": "nodemon -r tsconfig-paths/register src/server.ts",
     "test": "jest test --silent",
-    "lint": "eslint src --ext .ts"
+    "lint": "eslint src --ext .ts",
+    "prepare": "husky"
   },
   "author": "Thiago Telini",
   "license": "ISC",
@@ -34,10 +35,5 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.6.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
   }
 }
